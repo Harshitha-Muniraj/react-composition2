@@ -1,13 +1,33 @@
+import React,{useState} from "react";
+import './App.css'
+import Modal from "./component/Modal";
 
-import './App.css';
-import FetchData from './component/LoremDataFetch';
 
-function App() {
+const App = () => {
+
+  let[show,setShow]=useState(false)
+
+  const displayModal=()=>{
+
+    setShow(true)
+  }
+
+
+  const onClose=()=>{
+
+    setShow(false)
+  }
   return (
-    <div >
-      <FetchData/>
+    <div>
+       
+        <button onClick={displayModal}className="show-card-btn">Show Modal</button>
+        { show ? 
+        <Modal show={show} onClose={onClose}/>
+        : ""
+        }
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+

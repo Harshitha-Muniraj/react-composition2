@@ -1,12 +1,30 @@
-.card{
-  border: 2px solid black;
+.model-overlay{
+
+  width: 300px;
+  height: 150px;
+  background-color: skyblue ;
+  border-radius: 2px solid black;
 }
-.container{
-  display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+.show-card-btn{
+  background-color: maroon;
+  border: none;
+  color: white;
+  height: 2rem;
+  cursor: pointer;
 }
-.content{
-  width: 70%;
-  text-align: center;
-  margin: 0 auto;
+.model-close{
+
+  background-color: tomato;
+  margin-top: 30px;
+
+  margin-left: 20px;
+  border-radius: 2px;
+}
+
+.model-p{
+  margin-left: 20px;
+}
+.full{
+  height: 100vh;
 }
