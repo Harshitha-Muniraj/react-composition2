@@ -1,30 +1,32 @@
-.model-overlay{
-
-  width: 300px;
-  height: 150px;
-  background-color: skyblue ;
-  border-radius: 2px solid black;
+.container{
+  width: 40%;
+  margin: 7% auto;
 }
 
-.show-card-btn{
-  background-color: maroon;
-  border: none;
-  color: white;
-  height: 2rem;
+.tooltip {
+  position: relative;
+  display: block;
   cursor: pointer;
 }
-.model-close{
 
-  background-color: tomato;
-  margin-top: 30px;
-
-  margin-left: 20px;
-  border-radius: 2px;
+.tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(50%);
+  width: 220px;
+  background-color: red;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  
+}
+.first{
+  bottom: 50px;
 }
 
-.model-p{
-  margin-left: 20px;
-}
-.full{
-  height: 100vh;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

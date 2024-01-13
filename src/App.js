@@ -1,33 +1,21 @@
-import React,{useState} from "react";
-import './App.css'
-import Modal from "./component/Modal";
-
+import React from "react";
+import './App.css';
+import FirstToolTip from "./component/FirstToolTip";
+import SecondToolTip from "./component/SecondToolTip";
 
 const App = () => {
-
-  let[show,setShow]=useState(false)
-
-  const displayModal=()=>{
-
-    setShow(true)
-  }
-
-
-  const onClose=()=>{
-
-    setShow(false)
-  }
   return (
-    <div>
-       
-        <button onClick={displayModal}className="show-card-btn">Show Modal</button>
-        { show ? 
-        <Modal show={show} onClose={onClose}/>
-        : ""
-        }
+    <div className="container">
+        
+        <FirstToolTip text="This is a tooltip">
+          <h2>Hover over me</h2>
+        </FirstToolTip>
+        <hr/>
+        <SecondToolTip text="This is another tooltip">
+          <p>Hover over me to see another tooltip</p>
+        </SecondToolTip>
     </div>
   )
 }
 
 export default App
-
