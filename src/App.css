@@ -25,6 +25,9 @@
 }
 .first{
   bottom: 50px;
+  z-index: 1;
+    bottom: 100%;
+    left: 10%;
 }
 
 .tooltip:hover .tooltiptext {

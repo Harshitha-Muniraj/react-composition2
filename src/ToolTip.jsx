@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FirstToolTip = ({ text, children }) => {
+const ToolTip = ({ text, children }) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const handleMouseEnter = () => {
@@ -28,4 +28,4 @@ const FirstToolTip = ({ text, children }) => {
   );
 };
 
-export default FirstToolTip;
+export default ToolTip;
