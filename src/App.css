@@ -1,35 +1,33 @@
-.container{
-  width: 40%;
-  margin: 7% auto;
+.parent{
+  display: flex;
+  /* text-align:center ; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: tomato;
+  width: 600px;
+  margin: 20px auto;
+  padding: 100px;
 }
-
-.tooltip {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-.tooltiptext {
-  visibility: hidden;
-  position: absolute;
-  transform: translateX(50%);
-  width: 220px;
-  background-color: red;
-  color: #000;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-  position: absolute;
+.modal-overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 50px;
+  background-color: lightskyblue;
   
 }
-.first{
-  bottom: 50px;
-  z-index: 1;
-    bottom: 100%;
-    left: 10%;
+.modal-p{
+  text-align: center;
 }
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.modal-close{
+  /* margin-left:90% ; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border: none;
 }
